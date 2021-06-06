@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:rowCount="5"
+            android:columnCount="4"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_columnWeight="1"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/g_light"
+                    android:gravity="right"
+                    android:onClick="backspace"
+                    android:src="@drawable/ic_baseline_backspace_24"
+                    android:text="@string/btn_multiply"
+                    android:textSize="25sp"
+
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/clear_text"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_columnWeight="1"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_back"
+                    android:fontFamily="@font/g_light"
+                    android:onClick="clearBtn"
+                    android:text="@string/clear"
+                    android:textSize="25sp" />
+
+
+                <Button
+                    android:id="@+id/btnBracketOpen"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_columnWeight="1"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_back"
+                    android:fontFamily="@font/g_light"
+                    android:onClick="bracketOpenBtn"
+                    android:text="@string/bracket_open"
+                    android:textSize="25sp" />
+
+
+                <Button
+                    android:id="@+id/btnBracketClose"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_columnWeight="1"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_back"
+                    android:fontFamily="@font/g_light"
+                    android:onClick="bracketClose"
+                    android:text="@string/bracket_close"
+                    android:textSize="25sp" />
+
+
+                <Button
+                    android:id="@+id/btnMultiply"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_columnWeight="1"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_back"
+                    android:fontFamily="@font/g_light"
+                    android:onClick="multiplyBtn"
+                    android:text="@string/btn_multiply"
+                    android:textSize="25sp"
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn7"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_back"
+                    android:fontFamily="@font/g_light"
+                    android:onClick="sevenBtn"
+                    android:text="@string/btn_seven"
+                    android:textSize="25sp" />
+
+
+                <Button
+                    android:id="@+id/btn8"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_back"
+                    android:fontFamily="@font/g_light"
+                    android:onClick="eightBtn"
+                    android:text="@string/btn_eight"
+                    android:textSize="25sp" />
+
+
+                <Button
+                    android:id="@+id/btn9"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_back"
+                    android:fontFamily="@font/g_light"
+                    android:onClick="nineBtn"
+                    android:text="@string/btn_nine"
+                    android:textSize="25sp" />
+
+
+                <Button
+                    android:id="@+id/btnDivision"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_back"
+                    android:fontFamily="@font/g_light"
+                    android:onClick="divisionBtn"
+                    android:text="@string/btn_division"
+                    android:textSize="25sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_back"
+                    android:fontFamily="@font/g_light"
+                    android:onClick="fourBtn"
+                    android:text="@string/btn_four"
+                    android:textSize="25sp" />
+
+
+                <Button
+                    android:id="@+id/btn5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_back"
+                    android:fontFamily="@font/g_light"
+                    android:onClick="fiveBtn"
+                    android:text="@string/btn_five"
+                    android:textSize="25sp" />
+
+
+                <Button
+                    android:id="@+id/btn6"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_back"
+                    android:fontFamily="@font/g_light"
+                    android:onClick="sixBtn"
+                    android:text="@string/btn_six"
+                    android:textSize="25sp" />
+
+
+                <Button
+                    android:id="@+id/btnMinus"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_back"
+                    android:fontFamily="@font/g_light"
+                    android:onClick="minusBtn"
+                    android:text="@string/btn_subtract"
+                    android:textSize="25sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_back"
+                    android:fontFamily="@font/g_light"
+                    android:onClick="oneBtn"
+                    android:text="@string/btn_one"
+                    android:textSize="25sp" />
+
+
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_columnWeight="1"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_back"
+                    android:fontFamily="@font/g_light"
+                    android:onClick="twoBtn"
+                    android:text="@string/btn_two"
+                    android:textSize="25sp" />
+
+
+                <Button
+                    android:id="@+id/btn3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_columnWeight="1"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_back"
+                    android:fontFamily="@font/g_light"
+                    android:onClick="threeBtn"
+                    android:text="@string/btn_three"
+                    android:textSize="25sp" />
+
+
+                <Button
+                    android:id="@+id/btnPlus"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_columnWeight="1"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_back"
+                    android:fontFamily="@font/g_light"
+                    android:onClick="addBtn"
+                    android:text="@string/btn_add"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn0"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="6"
+                    android:background="@drawable/btn_back"
+                    android:fontFamily="@font/g_light"
+                    android:onClick="zeroBtn"
+                    android:text="@string/btn_zero"
+                    android:textSize="25sp" />
+
+
+                <Button
+                    android:id="@+id/btnPoint"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_back"
+                    android:fontFamily="@font/g_light"
+                    android:onClick="pointBtn"
+                    android:text="@string/btn_point"
+                    android:textSize="25sp" />
+
+
+                <Button
+                    android:id="@+id/btnEqual"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_columnWeight="1"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_back_equal"
+                    android:fontFamily="@font/g_light"
+                    android:onClick="btnEqual"
+                    android:text="@string/btn_equal"
+                    android:textSize="25sp" />
+
+
+            </LinearLayout>
+
+
+        </GridLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>
